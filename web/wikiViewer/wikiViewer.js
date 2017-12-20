@@ -20,7 +20,7 @@ function getWikiInfo(){
 	};
 
 
-	var url = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + val + '&format=json&origin=kerinkhan.me';
+	var url = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + val + '&format=json';
 	myRequest.open('GET',url,true);
 	myRequest.send(null);
 }
