@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki Viewer</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+	<h1> Wiki Viewer</h1>
+	<div class = "container-fluid">
+		<form>
+			<input type="text" id ="input" value ="">
+			<button class ='btn btn-primary' type="button" onclick="getWikiInfo()">SEARCH</button>
+		</form>
+
+	<br>  
+	<br>  
+
+	
+	<div>
+		<h2 class ="text-center"id ="opened"></h2>
+		<p class ="text-center"id ="textLoad"></p>
+		<ul class = "list-group"id = "listItems">
+			
+		</ul>
+	</div>
+	<script src="wikiViewer.js"></script>
+</div>
+</body>
+</html>

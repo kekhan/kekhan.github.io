@@ -1,0 +1,35 @@
+input{
+	height: 50px;
+	width: 50px;
+	margin: auto;
+	margin-left: 100px;
+	text-align: center;
+	
+}
+.well{
+	width: 400px;
+	height: 400px;
+	margin-left: 150px;
+	border-radius: 50%;
+
+	background-color: #00586D;
+
+	
+	
+	
+}
+.wrapper{
+	text-align: center;
+
+}
+button{
+	position: relative;
+	top: 50%;
+	
+}
+p{
+	font-size: 20px;
+}
+body{
+	background-color: #00A199;
+}
