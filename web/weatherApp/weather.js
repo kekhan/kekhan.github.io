@@ -15,7 +15,7 @@ function getLocation(){
 	};
 	if(navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(function(position){
-			var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&APPID=f04cad83babbc12fc2df40c392ebb7d7';
+			var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&APPID=AIzaSyCZJ2oQDk6Ck_InN8papKP5JUiY94uBleQ';
 	        myRequest.open('GET',url,true);
 	        myRequest.send(null);
 
