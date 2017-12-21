@@ -20,7 +20,7 @@ function getWikiInfo(){
 	};
 
 
-	var url = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + val + '&format=json';
+	var url = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + val + '&format=json&origin=*';
 	myRequest.open('GET',url,true);
 	myRequest.send(null);
 }
