@@ -22,13 +22,12 @@ function getTwitchtvStreams(){
 			if(myRequest.status< 400){
 				var str = JSON.parse(myRequest.responseText);
 				if(str.stream ===null){
-					document.getElementById('status3').innerHTML="Offline";
 					//offline.push(str)
 					getTwitchtv();
 				}
 				else{
 					online.push(str);
-					document.getElementById('status3').innerHTML="Online: "+str.stream.channel.status;
+					document.getElementById('status3').innerHTML=str.stream.channel.status;
 					onlineTwitch(str);
 				}
 
@@ -73,12 +72,11 @@ function getnewTwitchtvStreams(){
 				if(str.stream === null){
 
 					//offline.push(str);
-					document.getElementById('status1').innerHTML="Offline";
 					getnewTwitchtv();
 				}
 				else{
 					online.push(str);
-					document.getElementById('status1').innerHTML="Online: "+str.stream.channel.status;
+					document.getElementById('status1').innerHTML=str.stream.channel.status;
 					onlineTwitch(str);
 				}
 
@@ -121,12 +119,11 @@ function getnewStreams(){
 				var str = JSON.parse(myRequest.responseText);
 				if(str.stream===null){
 					//offline.push(str);
-					document.getElementById('status2').innerHTML="Offline";
 					getnew();
 				}
 				else{
 					online.push(str);
-					document.getElementById('status2').innerHTML="Online: "+str.stream.channel.status;
+					document.getElementById('status2').innerHTML=str.stream.channel.status;
 					onlineTwitch(str);
 				}
 
