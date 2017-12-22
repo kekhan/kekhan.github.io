@@ -1,7 +1,19 @@
 ul li{
 	display: inline;
 	list-style: none;
+	font-size: 25px;	
 }
+a{
+	color:#F9C1D9;
+}
+a:link{
+	text-decoration: none;
+
+}
+a:hover{
+	color: #F788A6;
+}
+
 .projectImg{
 	padding-top: 50px;
 	padding-right: 0;
@@ -13,6 +25,10 @@ ul li{
 .portfolio{
 	padding-top: 50px;
 }
-body{
-	background-color:#52CE94;
+.main-header{
+	background-color: #EF525B;
+	margin: 0;
+}
+h1{
+	font-size: 75px;
 }
