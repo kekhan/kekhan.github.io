@@ -1,7 +1,7 @@
 ul li{
 	display: inline;
 	list-style: none;
-	font-size: 25px;	
+	font-size: 1.5em;	
 }
 a{
 	color:#F9C1D9;
@@ -25,13 +25,27 @@ a:hover{
 	width: 300px;
 	height: 300px;
 }
+.projectImg:hover{
+	border-radius: 100%;
+}
 .portfolio{
 	padding-top: 50px;
 }
 .main-header{
 	background-color: #EF525B;
-	margin: 0;
+	padding-top: 50px;
 }
+.main-header h1{
+	color:#F9C1D9;
+}
+
 h1{
-	font-size: 75px;
+	font-size: 4em;
+}
+body{
+	margin: 0;
+
+}
+#bio{
+	padding-top: 50px;
 }
