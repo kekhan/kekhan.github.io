@@ -10,6 +10,9 @@ a:link{
 	text-decoration: none;
 
 }
+footer a {
+	color: #EF525B;
+}
 a:hover{
 	color: #F788A6;
 }
