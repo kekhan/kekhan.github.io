@@ -37,10 +37,15 @@ a:hover{
 }
 .main-header h1{
 	color:#F9C1D9;
+	width: 100%;
 }
 
 h1{
 	font-size: 4em;
+	text-align: center;
+}
+h2{
+	text-align: center;
 }
 body{
 	margin: 0;
@@ -48,4 +53,11 @@ body{
 }
 #bio{
 	padding-top: 50px;
+}
+#footer{
+	border-bottom: 50px solid #EF525B;
+}
+.topBorder{
+	border-top: 5px solid #F9C1D9;
+	margin-top: 20px;
 }
