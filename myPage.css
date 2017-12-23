@@ -10,14 +10,23 @@ ul li{
 a{
 	color:#F9C1D9;
 }
+
 a:link{
 	text-decoration: none;
 
 }
+
 #contact a {
 	color: #EF525B;
 }
 #contact a:hover {
+	color: #F788A6;
+}
+#footer a{
+	color: #EF525B;
+
+}
+#footer a:hover{
 	color: #F788A6;
 }
 a:hover{
