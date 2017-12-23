@@ -14,8 +14,11 @@ a:link{
 	text-decoration: none;
 
 }
-footer a {
+#contact a {
 	color: #EF525B;
+}
+#contact a:hover {
+	color: #F788A6;
 }
 a:hover{
 	color: #F788A6;
