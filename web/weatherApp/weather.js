@@ -3,7 +3,7 @@ var myRequest = new XMLHttpRequest();
 
 function getLocation(){
 	var myRequest= new XMLHttpRequest();
-	myRequest.onreadystatechange = function(){
+	myRequest.onload = function(){
 		if (myRequest.readyState === XMLHttpRequest.DONE){
 			if(myRequest.status <400){
 				var str = JSON.parse(myRequest.responseText);
