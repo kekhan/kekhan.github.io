@@ -1,7 +1,7 @@
 
 var myRequest = new XMLHttpRequest();
-var coordLong;
-var coordLat;
+var coordLong=0;
+var coordLat=0;
 function getLocation(){
 	var myRequest= new XMLHttpRequest();
 	myRequest.onload = function(){
