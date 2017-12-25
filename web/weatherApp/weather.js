@@ -1,6 +1,7 @@
 
 var myRequest = new XMLHttpRequest();
-
+var coordLong;
+var coordLat;
 function getLocation(){
 	var myRequest= new XMLHttpRequest();
 	myRequest.onload = function(){
@@ -13,17 +14,34 @@ function getLocation(){
 			}
 		}
 	};
-	if(navigator.geolocation){
-		navigator.geolocation.getCurrentPosition(function(position){
-			var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.coords.latitude+'&lon='+position.coords.longitude+'&APPID=AIzaSyCZJ2oQDk6Ck_InN8papKP5JUiY94uBleQ';
-	        myRequest.open('GET',url,true);
-	        myRequest.send(null);
 
-		});
-
-	}
+	var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+coordLat+'&lon='+coordLong+'&APPID=AIzaSyCZJ2oQDk6Ck_InN8papKP5JUiY94uBleQ';
+	myRequest.open('GET',url,true);
+	myRequest.send(null);
 	
 }
+
+function geoLocation(){
+	var request= new XMLHttpRequest();
+	request.onreadystatechange=function(){
+		if(request.readyState === XMLHttpRequest.DONE){
+			if(request.status< 400){
+				var str = JSON.parse(request.responseText);
+				
+				coordLat= str.location['lat'];
+				coordLong=str.location['lng'];
+				console.log(coordLat,coordLong);
+				getLocation(coordLat,coordLong);
+
+			}
+		}
+	};
+	var url = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBL3iwILHBbuqcXC96a5UX08-Eit3mCN4M';
+	request.open('POST',url,true);
+	request.send(null);
+	
+}
+
 function weatherInfo(data){
 	var time = new Date();
 	console.log(data);
