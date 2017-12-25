@@ -16,7 +16,7 @@ function getLocation(){
 	};
 	// need to get new key 
 
-	var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+coordLat+'&lon='+coordLong+'&APPID=AIzaSyCZJ2oQDk6Ck_InN8papKP5JUiY94uBleQ';
+	var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+coordLat+'&lon='+coordLong+'&APPID=f04cad83babbc12fc2df40c392ebb7d7';
 	myRequest.open('GET',url,true);
 	myRequest.send(null);
 	
