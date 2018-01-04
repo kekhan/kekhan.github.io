@@ -94,4 +94,12 @@ body{
 	display: table;
 	clear: both;
 }
-
+.bio{
+	float:right;
+	
+}
+#bio span{
+	color:#EF525B;
+	background-color: white; 
+	
+}
