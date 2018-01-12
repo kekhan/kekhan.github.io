@@ -62,7 +62,8 @@ h1{
 	font-size: 4em;
 	text-align: center;
 }
-h2{
+.aboutH2{
+	padding-left: 50px;
 	
 }
 body{
@@ -72,9 +73,12 @@ body{
 #contact{
 	padding-top: 50px;
 	padding-right: 50px;
-	float: right;
+	padding-left: 50px;
+	/*padding-bottom: 50px;*/
+	/*float: right;*/
 }
 #bio{
+	padding-left: 50px;
 	padding-top: 50px;
 	height:300px; 
 	background-image: url('https://placeimg.com/1000/1000/nature/grayscale');
@@ -89,7 +93,7 @@ body{
 	border-bottom: 5px solid #F9C1D9;
 	margin-top: 20px;
 }
-.group:after {
+/*.group:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -97,9 +101,12 @@ body{
 .bio{
 	float:right;
 	
-}
+}*/
 #bio span{
 	color:#EF525B;
 	background-color: white; 
 	
+}
+#footer{
+	padding-left: 50px;
 }
