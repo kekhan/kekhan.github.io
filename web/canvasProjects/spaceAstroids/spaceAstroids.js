@@ -15,6 +15,7 @@ canvas.height= window.innerHeight;
 var BulletAmounts = 10;
 var starInitial = 5;
 var count=0;
+var alienHit =0;
 window.addEventListener('keydown',function(){
 	canvas.key=event.keyCode;
 	if(canvas.key === 32){
@@ -83,15 +84,26 @@ function Component(img,x,y,width,height,isBullet,isShip,isComet,color,dx,dy){
 		{
 
 			console.log('alien hit');
+			alienHit+=1;
+			console.log(alienHit);
+
 			this.width= 0;
+			this.x=0;
+			this.y=0;
+			this.dx=0;
+			this.dy=0;
 			this.height = 0;
+		}
+		if(alienHit >= starInitial){
+			alert("YOU WIN!!");
+		}
 			
 		}
 	}
 	this.update = function () {
 		if(isBullet){
 			
-			//starts out with 10 bullets
+			
 			if(canvas.key && canvas.key === 32)
 			{
 				bullet.y=ship.y-bullet.height;
