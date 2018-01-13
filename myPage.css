@@ -74,8 +74,6 @@ body{
 	padding-top: 50px;
 	padding-right: 50px;
 	padding-left: 50px;
-	/*padding-bottom: 50px;*/
-	/*float: right;*/
 }
 #bio{
 	padding-left: 50px;
@@ -93,15 +91,7 @@ body{
 	border-bottom: 5px solid #F9C1D9;
 	margin-top: 20px;
 }
-/*.group:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.bio{
-	float:right;
-	
-}*/
+
 #bio span{
 	color:#EF525B;
 	background-color: white; 
