@@ -48,7 +48,7 @@ a:hover{
 .portfolio{
 	padding-top: 50px;
 	padding-left: 50px;
-	float: left;
+	
 }
 .main-header{
 	background-color: #EF525B;
@@ -71,9 +71,10 @@ body{
 
 }
 #contact{
-	padding-top: 50px;
+
 	padding-right: 50px;
 	padding-left: 50px;
+	
 }
 #bio{
 	padding-left: 50px;
@@ -100,3 +101,4 @@ body{
 #footer{
 	padding-left: 50px;
 }
+
