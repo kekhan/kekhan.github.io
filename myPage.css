@@ -70,6 +70,7 @@ body{
 	margin: 0;
 
 }
+
 #contact{
 
 	padding-right: 50px;
@@ -87,6 +88,7 @@ body{
 }
 #footer{
 	border-bottom: 50px solid #EF525B;
+	padding-left: 50px;
 }
 .topBorder{
 	border-bottom: 5px solid #F9C1D9;
@@ -95,10 +97,7 @@ body{
 
 #bio span{
 	color:#EF525B;
-	background-color: white; 
-	
+	background-color: white; 	
 }
-#footer{
-	padding-left: 50px;
-}
+
 
