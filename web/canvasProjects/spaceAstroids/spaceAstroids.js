@@ -94,11 +94,11 @@ function Component(img,x,y,width,height,isBullet,isShip,isComet,color,dx,dy){
 			console.log(this.x,this.y,this.width,this.height,this.dx,this.dy);
 			
 		}
+		
 		if(alienHit >= starInitial){
 			alert("YOU WIN!!");
 		}
 			
-		}
 	}
 	this.update = function () {
 		if(isBullet){
