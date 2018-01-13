@@ -82,17 +82,17 @@ function Component(img,x,y,width,height,isBullet,isShip,isComet,color,dx,dy){
 		if((this.x) < (bullet.x + bullet.width) && (this.x) > bullet.x &&
                (this.y) < bullet.y + bullet.height && (this.y) > bullet.y)
 		{
-
-			console.log('alien hit');
 			alienHit+=1;
 			console.log(alienHit);
 
-			this.width= 0;
-			this.x=0;
-			this.y=0;
-			this.dx=0;
-			this.dy=0;
+			this.width = 0;
 			this.height = 0;
+			this.x = 0;
+			this.y = 0;
+			this.dx = 0;
+			this.dy = 0;
+			console.log(this.x,this.y,this.width,this.height,this.dx,this.dy);
+			
 		}
 		if(alienHit >= starInitial){
 			alert("YOU WIN!!");
