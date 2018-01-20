@@ -7,6 +7,7 @@ laser.src = 'https://donaldcarling.files.wordpress.com/2016/03/blast-harrier-las
 rock.src = 'http://www.freepngimg.com/download/alien/7-2-alien-transparent.png';
 console.log(rock);
 var alienHit =0;
+var prompt;
 
 
 var canvas = document.getElementById('canvas');
@@ -16,6 +17,7 @@ canvas.height= window.innerHeight;
 var BulletAmounts = 10;
 var starInitial = 5;
 var count=0;
+
 window.addEventListener('keydown',function(){
 	canvas.key=event.keyCode;
 	if(canvas.key === 32){
@@ -98,7 +100,9 @@ function Component(img,x,y,width,height,isBullet,isShip,isComet,color,dx,dy){
 			
 		}
 		if(alienHit >= starInitial){
-			alert("YOU WIN!!");
+			ctx.font="30px Arial";
+			ctx.fillStyle="#5E5EB3"
+			ctx.fillText("You Win!",innerWidth/2,innerHeight/2);
 		}
 		
 	}
@@ -107,16 +111,14 @@ function Component(img,x,y,width,height,isBullet,isShip,isComet,color,dx,dy){
 			
 			if(canvas.key && canvas.key === 32)
 			{
-				bullet.y=ship.y-bullet.height;
-				bullet.x=ship.x+9;
-				soundBullet.play();
+				bullet.y=ship.y;
+				bullet.x=ship.x;
 
-				
-				
+				soundBullet.play();	
 			}
-			updatePosition();
-
-		
+			// continuoulsy moves the bullet 20 spaces up
+			bullet.y-=20;
+			
 			this.draw();
 		}
 
@@ -162,17 +164,9 @@ function Component(img,x,y,width,height,isBullet,isShip,isComet,color,dx,dy){
 	}
 
 }
-
-//
-function updatePosition(){
-	bullet.y-=20;
-}
-
-
-
 	
-
-var ship = new Component(spaceShip,Math.random() * innerWidth, Math.random() * (innerHeight-110),100,50,false,true,false);
+// initiating the calls to
+var ship = new Component(spaceShip,innerWidth/2, innerHeight/2,100,50,false,true,false);
 var bullet = new Component(laser,Math.random() * innerWidth, Math.random() * (innerHeight-110),100,50,true,false,false);
 //var asto= new Component(10,10,'grey',200,50,true,false,false,false,true);
 soundBullet = new sound('laser.mp3');
@@ -193,14 +187,19 @@ for (var i = 0; i<starInitial; i++){
 
 	var star_x = Math.random()*innerWidth;
 	var star_y = Math.random() * innerHeight;
-	starArrays.push(new Component(rock, Math.random() * innerWidth, Math.random() * (innerHeight-110),50,50,false,false,true,"red",dx,dy));
+	starArrays.push(new Component(rock, 50+20, 30,50,50,false,false,true,"red",dx,dy));
 	console.log(starArrays)
 }
 
 
 function animate(){
+
+
 	requestAnimationFrame(animate);
 	ctx.clearRect(0,0,canvas.width,canvas.height);
+	ctx.font="30px Arial";
+	ctx.fillStyle="#5E5EB3"
+	ctx.fillText("Score:"+alienHit,10,50);
 	for( var i=0; i<starArrays.length; i++){
 		starArrays[i].update();
 		starArrays[i].collision(starArrays[i]);
@@ -208,6 +207,16 @@ function animate(){
 	bullet.collision();
 	bullet.update();
 	ship.update();
+	if(alienHit>=starInitial){
+		prompt = prompt("Play Again? Y/N")
+		if(prompt == "Y"){
+			location.reload();
+		}
+		else{
+			console.log("pass");
+		}
+
+	}
 
 }
 animate();
