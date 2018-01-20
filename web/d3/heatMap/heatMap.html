@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heat Map</title>
+	<style type="text/css">
+	    h1{
+	    	padding-left: 50px;
+	    }
+	</style>
+
+</head>
+<body>
+	<h1>Monthly Global Land-Surface Temperature</h1>
+	<div id = "graphWrapper"></div>
+	<script src = "http://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript">
+	var url = "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json";
+	var width = 600;
+	var height = 500;
+	var margin = 30;
+	var padding = 30;
+	var xScale = d3.scale.linear().range([0,width + padding + margin]);
+	var yScale = d3.scale.linear().range([padding + margin + height,0]);
+
+	var svg = d3.select("#graphWrapper")
+                .append('svg')
+	            .attr("width",width + padding +margin+ 150)
+	            .attr("height",height + padding + margin+150)
+	            .append("g")
+	            .attr('transform','translate(' + padding + ',' + padding + ')');
+	
+
+	d3.json(url, function(error,data){
+		var base_vari = data.baseTemperature;
+		data = data.monthlyVariance;
+		console.log(data);
+		
+		console.log(base_vari);
+
+		var year =[];
+		var month = [];
+		var variance = [];
+		for (var i = 0; i<data.length;i++){
+			year.push(data[i].year);
+			month.push(data[i].month);
+			variance.push(data[i].variance);
+		} 
+
+
+
+		xDomain = d3.extent(year,function(el){
+			return parseInt(el);
+		});
+		yDomain = d3.extent(month,function(el){
+			return parseInt(el);
+		});
+
+
+		xScale.domain(xDomain);
+		yScale.domain(yDomain);
+
+		var xAxis = d3.svg.axis().scale(xScale)
+		                 .orient("bottom")
+		                 .ticks(15);
+		var yAxis = d3.svg.axis().scale(yScale)
+		                .orient("left")
+		                .ticks(12);
+
+		rects = svg.selectAll("g.rects")
+		            .data(data)
+		            .enter()
+		            .append("g")
+		            .attr("class","rects");
+
+		        rects.attr("transform",function(d){
+		        	//console.log(d.year,d.month);
+		
+		        	x = xScale(d.year);
+		        	y = yScale(d.month);
+		        	return 'translate(' + x + ',' + y + ')';
+		        });
+
+		        rects.append("rect")
+		             .attr("width", '5px')
+		             .style("margin","50px")
+
+		            .attr("height",function(d){
+		                return 50;
+		            })
+		            .attr("fill", function(d){
+
+		            	temp = (base_vari )+ (d.variance);
+		            	//console.log(temp);
+		            	if(temp >= 12.7){
+		            		return "#820333";
+		            	}
+		            	else if(temp >= 11.6){
+		            		return "#F0433A";
+		            	}
+		            	else if (temp >= 10.5){
+		            		return "#FF4F17";
+		            	}
+		            	else if(temp >= 9.4){
+		            		return "#E87409";
+		            	}
+		            	else if (temp >= 8.3){
+		            		return "#E87409";
+		            	}
+		            	else if(temp >= 7.2){
+		            		return "#FCE781"
+		            	}
+		            	else if (temp >= 6.1){
+		            		return "#BEF34B";
+		            	}
+		            	else if (temp >= 5){
+		            		return "#3CF36C";
+		            	}
+		            	else if (temp >= 3.9)
+		            	{
+		            		return "green";
+		            	}
+		            	else if (temp >= 2.7){
+		            		return "blue";
+
+		            	}
+		            	else if (temp <= 0){
+		            		return "purple";
+		            	}
+
+		            });
+		rects.append("text")
+		        .attr("y", ".4em") // change dx and dy in order to center in the circle.
+		        //.attr("x","1.5em")
+		        .attr("fill",function(d){
+		        	if (d.year < 1800){
+		        		return "teal"
+		        	}
+		        	else {
+		        		return "black"
+		        	}
+		        })
+  				.style("text-anchor", "end")
+  				.style("font-size",function(d){
+  					if(d.year < 1800){
+  						return "0.9em"
+  					}
+  					else{
+  						return "2em";
+  					}
+  				})
+		        .text(function(d,i){
+		        	temp = base_vari + (d.variance);
+		        	CtoF = (temp * 1.8) + 32;
+		        	sentence = d.year + "\n" + Math.floor(CtoF) + "˚F";
+		        	return sentence;
+		        })
+		        //.style("position","absolute")
+		        .style("display","none");
+
+        rects.on("mouseover",function(){
+        	rect = d3.select(this);
+        	rect.select('text')
+        	    .style('display','block');
+
+        });
+        rects.on("mouseout",function(){
+        	d3.select(this)
+        	    .select('text')
+        	    .style('display','none');
+        });
+		 // x axis
+        svg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + 
+                ((height + margin + padding)+50)+ ")")
+            .call(xAxis);
+
+    svg.append("text")             
+      .attr("transform",
+            "translate(" + (width/2) + " ," + 
+                           (height + 150) + ")")
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Years");
+
+          //the y axis
+        svg.append("g")
+            .attr("class", "y axis")
+                  .attr("transform",
+            "translate(" + (0) + " ," + 
+                           (50) + ")")
+            .call(yAxis);
+    svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - 35)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Months");
+
+
+
+
+
+	});
+	</script>
+</body>
+</html>
