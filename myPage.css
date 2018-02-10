@@ -43,7 +43,9 @@ a:hover{
 	max-width: 100%;
 }
 .projectImg:hover{
-	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	background-color: #EF525B
 }
 .portfolio{
 	padding-top: 50px;
@@ -95,9 +97,11 @@ body{
 	margin-top: 20px;
 }
 
-#bio span{
+.bio-box{
 	color:#EF525B;
-	background-color: white; 	
+	width: 80%;
+	border-radius: 2%;
+	background-color: #F9C1D9; 	
 }
 
 
