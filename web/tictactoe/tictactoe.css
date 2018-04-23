@@ -38,13 +38,7 @@ button{
 }
 
 }
-#row1{
-	display: flex;
-}
-#row2{
-	display: flex;
-}
-#row3{
+.row1, .row2, .row3{
 	display: flex;
 }
 
