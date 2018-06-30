@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title> Flying Scoops Game </title>
+	<style type="text/css">
+	 canvas{
+	 	background-color: white;
+	 	margin: 0;
+	 	padding: 0;
+	 }
+	 form{
+	 	background-color: orange;
+	 }
+
+	</style>
+</head>
+<body onload = "startGame()">
+	
+	<canvas id = "canvas">
+	</canvas>
+	<input id="angle" type="text" value=""> Angle
+	<input id="speed" type="text" value=""> Speed
+	<button id="submit" onclick="getInput()">submit</button>
+
+	<script type="text/javascript" src = "flyingScoops.js"></script>
+</body>
+</html>
