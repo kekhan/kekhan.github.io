@@ -8,7 +8,7 @@ ul li{
 	font-size: 1.5em;	
 }
 a{
-	color:#F9C1D9;
+	color:#98BDD8;
 }
 
 a:link{
@@ -17,20 +17,20 @@ a:link{
 }
 
 #contact a {
-	color: #EF525B;
+	color: #186CA6;
 }
 #contact a:hover {
-	color: #F788A6;
+	color: #3D76A5;
 }
 #footer a{
-	color: #EF525B;
+	color: #186CA6;
 
 }
 #footer a:hover{
-	color: #F788A6;
+	color: #3D76A5;
 }
 a:hover{
-	color: #F788A6;
+	color: #3D76A5;
 }
 
 .projectImg{
@@ -53,11 +53,11 @@ a:hover{
 	
 }
 .main-header{
-	background-color: #EF525B;
+	background-color: #186CA6;
 	padding-top: 50px;
 }
 .main-header h1{
-	color:#F9C1D9;
+	color:#98BDD8;
 }
 
 h1{
@@ -89,19 +89,19 @@ body{
 	background-position:center;
 }
 #footer{
-	border-bottom: 50px solid #EF525B;
+	border-bottom: 50px solid #186CA6;
 	padding-left: 50px;
 }
 .topBorder{
-	border-bottom: 5px solid #F9C1D9;
+	border-bottom: 5px solid #98BDD8;
 	margin-top: 20px;
 }
 
 .bio-box{
-	color:#EF525B;
+	color:#186CA6;
 	width: 80%;
 	border-radius: 2%;
-	background-color: #F9C1D9; 	
+	background-color: #98BDD8; 	
 }
 .row1, .row2, .row3, .row4, .row5 {
 	display: flex;
