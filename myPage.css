@@ -97,11 +97,13 @@ body{
 }
 
 .bio-box{
-	color:#186CA6;
-	width: 80%;
+	color:#EF525B;
+	
+	height: 200px;
 	border-radius: 2%;
-	background-color: #98BDD8; 	
+	background-color: #F9C1D9; 	
 }
+
 .row1, .row2, .row3, .row4, .row5 {
 	display: flex;
 }
