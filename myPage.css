@@ -7,7 +7,7 @@ ul li{
 	font-size: 1.5em;	
 }
 a{
-	color:#98BDD8;
+	color:#F9C1D9;
 }
 
 a:link{
@@ -16,20 +16,20 @@ a:link{
 }
 
 #contact a {
-	color: #186CA6;
+	color: #EF525B;
 }
 #contact a:hover {
-	color: #3D76A5;
+	color: #F788A6;
 }
 #footer a{
-	color: #186CA6;
+	color: #EF525B;
 
 }
 #footer a:hover{
-	color: #3D76A5;
+	color: #F788A6;
 }
 a:hover{
-	color: #3D76A5;
+	color: #F788A6;
 }
 
 .projectImg{
@@ -44,7 +44,7 @@ a:hover{
 .projectImg:hover{
 	width: 200px;
 	height: 200px;
-	
+	background-color: #EF525B
 }
 .portfolio{
 	padding-top: 50px;
@@ -52,11 +52,11 @@ a:hover{
 	
 }
 .main-header{
-	background-color: #186CA6;
+	background-color: #EF525B;
 	padding-top: 50px;
 }
 .main-header h1{
-	color:#98BDD8;
+	color:#F9C1D9;
 }
 
 h1{
@@ -86,13 +86,14 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;;
 	background-position:center;
+	width: 100%;
 }
 #footer{
-	border-bottom: 50px solid #186CA6;
+	border-bottom: 50px solid #EF525B;
 	padding-left: 50px;
 }
 .topBorder{
-	border-bottom: 15px solid #98BDD8;
+	border-bottom: 5px solid #F9C1D9;
 	margin-top: 20px;
 }
 
@@ -101,12 +102,10 @@ body{
 	
 	height: 200px;
 	border-radius: 2%;
-	background-color: #F9C1D9; 	
+	background-color: #F9C1D9; 
+	border-style: solid;
+	border-width: 5px;
+	border-color: #EF525B;
 }
-
-.row1, .row2, .row3, .row4, .row5 {
-	display: flex;
-}
-
 
 
