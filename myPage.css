@@ -45,11 +45,6 @@ a:hover{
 	height: 150px;
 	max-width: 100%;
 }
-.projectImg:hover{
-	width: 200px;
-	height: 200px;
-	background-color: #505052
-}
 .portfolio{
 	padding-top: 50px;
 	padding-left: 50px;
