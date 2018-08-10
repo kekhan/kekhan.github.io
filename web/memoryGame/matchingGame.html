@@ -3,21 +3,24 @@
 
 <head>
 	<title>Color Matching Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="matchingGame.css">
-	<style type="text/css">
-	.btn{
-		background-color: green;
-	}
-	</style>
+
 
 </head>
 <body>
 	<h1> Color Matching Memory Game</h1>
 	<div class = "container">
-		<h1 id = "msg"></h1>
+		<div class="row">
+			<div class="col-md-2">
+				<h1 id = "msg"></h1>
+			</div>
 
-		<h3 id = "timer"></h3>
-		<button onclick ="timer()">Timer</button>
+			<div class="col-md-2">
+				<h3 id = "timer"></h3>
+			  <button id="btn-timer" onclick ="timer()">Timer</button
+			 </div>
+		</div>
 		<div>
 			<button id ="button1" class = "btn" onclick = "getClick(this)" value = 1></button>
 			<button id ="button2" class = "btn" onclick = "getClick(this)" value = 2></button>
