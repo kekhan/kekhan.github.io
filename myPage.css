@@ -56,19 +56,24 @@ a:hover{
 .main-header{
 	background-color: #F2A516;
 	padding-top: 50px;
+	margin: 0;
 }
 .main-header h1{
 	color:#100404;
 }
 
-h1{
+h1 {
 	font-size: 4em;
 	text-align: center;
 }
-.aboutH2{
-	padding-left: 50px;
+.main-header p{
+	text-align: center;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
 
 }
+
 body{
 	margin: 0;
 
@@ -80,40 +85,27 @@ body{
 	padding-left: 50px;
 
 }
-#bio{
-	padding-left: 50px;
-	padding-top: 50px;
-	height:300px;
-	background-size: cover;
-	background-repeat: no-repeat;;
-	background-position:center;
-	width: 100%;
-}
+
 #footer{
 	border-bottom: 50px solid #F2A516;
 	padding-left: 50px;
 }
 .topBorder{
 	border-bottom: 5px solid #100404;
-	margin-top: 20px;
+	margin:auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+
 }
 
-.bio-box{
-	color:#F2A516;
 
-	height: 200px;
-	border-radius: 2%;
-	background-color: #100404;
-	border-style: solid;
-	border-width: 5px;
-	border-color: #F2A516;
-}
 #animation{
 	background-color:#100404;
-	width: 200px;
-	height: 250px;
-	margin: 0px;
-	padding: 50px;
+	width: 100%;
+	height: 300px;
+	margin: 0;
+	padding: 100px;
 }
 .pumpkin{
 	background-color: #EF4921;
@@ -185,7 +177,7 @@ body{
 	left: 0px;
 	right: 0px;
 	border-radius: 50%;
-	box-shadow: 1px 5px 0px 0px #100404;
+	box-shadow: 5px 25px 0px 0px #100404;
 }
 .pumpkin-stem{
 	background-color: #AD4513;
