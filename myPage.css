@@ -118,6 +118,15 @@ body{
 	bottom: 0;
 	left: 0;
 	margin: auto;
+	animation-name: pumpkin;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes pumpkin{
+	0% {
+		transform: scale(0.1);
+	}
+
 }
 .pumpkin::before {
 	background-color: transparent;
@@ -133,8 +142,12 @@ body{
 	right: 0px;
 	border-radius: 50%;
 	box-shadow: 5px 5px 0px 0px #100404;
+	animation-name: pumpkin-light-up;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
 
 }
+
 .pumpkin::after {
 	background-color: transparent;
 	transform: rotate(-145deg);
@@ -149,8 +162,12 @@ body{
 	right: 0px;
 	border-radius: 50%;
 	box-shadow: 5px 5px 0px 0px #100404;
+	animation-name: pumpkin-light-up;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
 
 }
+
 .pumpkin-nose{
 	position: absolute;
 	margin: auto;
@@ -161,6 +178,9 @@ body{
 	left: 0;
 	right: 0;
 	background-color: #100404;
+	animation-name: pumpkin-light-nose;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
 
 }
 
@@ -178,6 +198,19 @@ body{
 	right: 0px;
 	border-radius: 50%;
 	box-shadow: 5px 25px 0px 0px #100404;
+	animation-name: pumpkin-light-up;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+@keyframes pumpkin-light-nose{
+	0% {
+		background-color: yellow;
+	}
+}
+@keyframes pumpkin-light-up{
+	0% {
+		box-shadow: 5px 5px 0px 0px yellow;
+	}
 }
 .pumpkin-stem{
 	background-color: #AD4513;
@@ -194,4 +227,150 @@ body{
 	border-radius: 0%;
 	//box-shadow: 5px 5px 0px 0px #590202;
 
+}
+.ghost{
+	width: 100px;
+	height: 200px;
+	background-color: #F2F2E0;
+	top:200px;
+	right:500px;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	position: absolute;
+	animation-name: ghost;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes ghost {
+	0% {
+		transform: scale(0.1);
+	}
+	100% {
+		transform:rotate(45deg);
+	}
+}
+.ghost::before{
+	content:"";
+	width: 10px;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	top:50px;
+	bottom: 0;
+	margin: 0;
+	right:-30px;
+	left:50px;
+}
+.ghost::after{
+	content:"";
+	width: 10px;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	top:50px;
+	bottom: 0;
+	margin: 0;
+	right:30px;
+	left:70px;
+}
+.ghost-mouth{
+	content:"";
+	width: 10px;
+	height: 20px;
+	background-color: transparent;
+	position: absolute;
+	border-radius: 50%;
+	top:85px;
+	bottom: 0;
+	margin: 0;
+	right:-30px;
+	left:65px;
+	box-shadow: 10px 5px 5px 5px black;
+	transform: rotate(45deg);
+}
+/*.ghost-bottom{
+	content:"";
+	width: 35px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	top:180px;
+	bottom: 110px;
+	margin: 0;
+	right:3px;
+	left:65px;
+	transform: rotate(180deg);
+
+
+}*/
+.ghost2{
+	width: 100px;
+	height: 200px;
+	background-color: #F2F2E0;
+	top:200px;
+	right:-500px;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	position: absolute;
+	animation-name: ghost2;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes ghost2 {
+	0% {
+		transform: scale(0.1);
+	}
+	100% {
+		transform:rotate(-45deg);
+	}
+}
+.ghost2::before{
+	content:"";
+	width: 10px;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	top:50px;
+	bottom: 0;
+	margin: 0;
+	right:-30px;
+	left:10px;
+}
+.ghost2::after{
+	content:"";
+	width: 10px;
+	height: 20px;
+	background-color: black;
+	position: absolute;
+	border-radius: 50%;
+	top:50px;
+	bottom: 0;
+	margin: 0;
+	right:30px;
+	left:30px;
+}
+.ghost2-mouth{
+	content:"";
+	width: 10px;
+	height: 20px;
+	background-color: transparent;
+	position: absolute;
+	border-radius: 50%;
+	top:85px;
+	bottom: 0;
+	margin: 0;
+	right:-30px;
+	left:25px;
+	box-shadow: 10px 5px 5px 5px black;
+	transform: rotate(45deg);
 }
