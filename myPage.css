@@ -228,7 +228,7 @@ body{
 	//box-shadow: 5px 5px 0px 0px #590202;
 
 }
-.animation-ghost{
+/*.animation-ghost{
 	width: 100px;
 	height: 200px;
 	background-color: #F2F2E0;
@@ -293,7 +293,7 @@ body{
 	box-shadow: 10px 5px 5px 5px black;
 	transform: rotate(45deg);
 }
-/*.ghost-bottom{
+.ghost-bottom{
 	content:"";
 	width: 35px;
 	height: 50px;
@@ -308,7 +308,7 @@ body{
 	transform: rotate(180deg);
 
 
-}*/
+}
 .animation-ghost2{
 	width: 100px;
 	height: 200px;
@@ -373,11 +373,11 @@ body{
 	left:25px;
 	box-shadow: 10px 5px 5px 5px black;
 	transform: rotate(45deg);
-}
+}*/
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="animation-"] {
         width: 25%;
-	height: 25%;
+				height: 25%;
     }
 }
