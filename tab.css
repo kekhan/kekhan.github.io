@@ -1,0 +1,118 @@
+
+main {
+  max-width: 100%;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  position: relative;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+
+
+#tab1,#tab2,#tab3{
+  display: none;
+  position: absolute;
+}
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 200px;
+  font-weight: bold;
+  text-align: center;
+  color: #abc;
+  border: 2px solid transparent;
+}
+.form-label{
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+}
+
+label:before {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label:hover {
+  color: #789;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #1A305E;
+  font-weight: bold;
+  border: 2px solid #2D3E50;
+  border-radius: 5px;
+  border-top: 4px solid #2D3E50;
+  border-bottom: 1px solid transparent;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3
+{
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 1em;
+    display: inline-block;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  label {
+    padding: 10px;
+    font-size: .85em;
+    display: inline-block;
+  }
+  li{
+    padding-left: 60px;
+    display: block;
+    margin:  0;
+  }
+}
+form {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 25px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+
+}
+form button{
+  margin-top: 15px;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    max-width: 100%;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 25px 20px;
+
+}
+.tabcontent h5{
+  font-weight: bold;
+}
+a p{
+  font-weight: bold;
+  text-align: center;
+  padding-right: 50px;
+  color:#1A305E;
+  position: relative;
+  text-decoration: none;
+}
+a p:hover{
+  text-decoration: none;
+  color:#FFB00D;
+}
