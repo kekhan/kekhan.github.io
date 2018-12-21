@@ -3,12 +3,15 @@
 }
 
 ul li{
-	display: inline;
 	list-style: none;
-	font-size: 1.5em;	
+	font-size: 1.5em;
+}
+.list{
+	display: inline-block;
 }
 a{
-	color:#F9C1D9;
+	color:#2D3E50;
+	font-weight: bold;
 }
 
 a:link{
@@ -17,91 +20,217 @@ a:link{
 }
 
 #contact a {
-	color: #EF525B;
+	color: #2D3E50;
 }
 #contact a:hover {
-	color: #F788A6;
+	color: #E64C66;
 }
 #footer a{
-	color: #EF525B;
+	color: #2D3E50;
 
 }
 #footer a:hover{
-	color: #F788A6;
+	color: #1BBC9B;
 }
 a:hover{
-	color: #F788A6;
+	color: #1BBC9B;
 }
 
 .projectImg{
-	padding-top: 50px;
+
 	padding-right: 0;
 	padding-left: 0;
 	margin: auto;
-	width: 150px;
-	height: 150px;
-	max-width: 100%;
+	border: 2px solid white;
+	
 }
 .projectImg:hover{
-	width: 200px;
-	height: 200px;
-	background-color: #EF525B
+	transform: scale(1.5);
 }
 .portfolio{
 	padding-top: 50px;
 	padding-left: 50px;
-	
+	background-color: #FFFFFF;
+	color: #2D3E50;
+	border-top: 5px solid #2D3E50;
+
+}
+section .blog{
+	padding-top: 50px;
+	padding-left: 50px;
+	border-top: 5px solid #2D3E50;
+	background-color: #FFFFFF;
+	color: #2D3E50;
+
 }
 .main-header{
-	background-color: #EF525B;
-	padding-top: 50px;
+	background-color: #E64C66;
+	margin: 0 auto;
+	padding: 25px;
 }
 .main-header h1{
-	color:#F9C1D9;
+	color:#2D3E50;
 }
 
-h1{
+h1 {
 	font-size: 4em;
 	text-align: center;
 }
-.aboutH2{
-	padding-left: 50px;
-	
+.main-header p{
+	text-align: center;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+
 }
+
 body{
 	margin: 0;
-
 }
 
 #contact{
 
 	padding-right: 50px;
 	padding-left: 50px;
-	
+	background-color: #1BBC9B;
 }
-#bio{
-	padding-left: 50px;
-	padding-top: 50px;
-	height:300px; 
-	background-image: url('https://placeimg.com/1000/1000/nature/grayscale');
-	background-size: cover;
-	background-repeat: no-repeat;;
-	background-position:center;
-}
+
 #footer{
-	border-bottom: 50px solid #EF525B;
-	padding-left: 50px;
-}
-.topBorder{
-	border-bottom: 5px solid #F9C1D9;
-	margin-top: 20px;
-}
-
-.bio-box{
-	color:#EF525B;
-	width: 80%;
-	border-radius: 2%;
-	background-color: #F9C1D9; 	
+	background-color: #E64C66;
+	padding: 10px;
 }
 
 
+
+#animation{
+	background-color:#1BBC9B;
+	width: 100%;
+	height: 300px;
+	margin: 0;
+	padding: 100px;
+	border-bottom: 5px solid #2D3E50;
+}
+.pumpkin{
+	background-color: #EF4921;
+	position: absolute;
+	height: 200px;
+	border-radius: 40%;
+	width: 250px;
+	top:0px;
+	right:0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	animation-name: pumpkin;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+.pumpkin::before {
+	background-color: transparent;
+	transform: rotate(-145deg);
+	content: "";
+	position: absolute;
+	margin: auto;
+	width: 45px;
+	height: 45px;
+	top: 0;
+	bottom: 0px;
+	left: 120px;
+	right: 0px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 0px 0px #100404;
+	animation-name: pumpkin-light-up;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+
+}
+
+.pumpkin::after {
+	background-color: transparent;
+	transform: rotate(-145deg);
+	content: "";
+	position: absolute;
+	margin: auto;
+	width: 45px;
+	height: 45px;
+	top: 0;
+	bottom: 0px;
+	left: -120px;
+	right: 0px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 0px 0px #100404;
+	animation-name: pumpkin-light-up;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+
+}
+
+.pumpkin-nose{
+	position: absolute;
+	margin: auto;
+	width: 10px;
+	height: 20px;
+	top: 0;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	background-color: #100404;
+	animation-name: pumpkin-light-nose;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+
+}
+
+.pumpkin-mouth{
+	background-color: transparent;
+	transform: rotate(0deg);
+	content: "";
+	position: absolute;
+	margin: auto;
+	width: 100px;
+	height: 45px;
+	top: 0;
+	bottom: -80px;
+	left: 0px;
+	right: 0px;
+	border-radius: 50%;
+	box-shadow: 5px 25px 0px 0px #100404;
+	animation-name: pumpkin-light-up;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+/*@keyframes pumpkin-light-nose{
+	0% {
+		background-color: white;
+	}
+}
+@keyframes pumpkin-light-up{
+	0% {
+		box-shadow: 5px 5px 0px 0px white;
+	}
+}*/
+.pumpkin-stem{
+	background-color: #AD4513;
+	transform: rotate(0deg);
+	content: "";
+	position: absolute;
+	margin: auto;
+	width: 20px;
+	height: 45px;
+	top: 0;
+	bottom: 180px;
+	left: 0px;
+	right: 0px;
+	border-radius: 0%;
+	//box-shadow: 5px 5px 0px 0px #590202;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="animation-"] {
+        width: 25%;
+				height: 25%;
+    }
+}
