@@ -42,7 +42,7 @@ a:hover{
 	padding-left: 0;
 	margin: auto;
 	border: 2px solid white;
-	
+
 }
 .projectImg:hover{
 	transform: scale(1.5);
@@ -124,7 +124,6 @@ body{
 	animation-name: pumpkin;
 	animation-duration: 1s;
 	animation-iteration-count: 1;
-<<<<<<< HEAD
 }
 
 .pumpkin::before {
@@ -147,12 +146,7 @@ body{
 
 }
 
-.pumpkin::after {
-=======
-}
-
 .pumpkin::before {
->>>>>>> c45f9b8c31a944956f1c8dd49bb4ac24cd6e241e
 	background-color: transparent;
 	transform: rotate(-145deg);
 	content: "";
@@ -162,11 +156,8 @@ body{
 	height: 45px;
 	top: 0;
 	bottom: 0px;
-<<<<<<< HEAD
 	left: -120px;
-=======
 	left: 120px;
->>>>>>> c45f9b8c31a944956f1c8dd49bb4ac24cd6e241e
 	right: 0px;
 	border-radius: 50%;
 	box-shadow: 5px 5px 0px 0px #100404;
@@ -176,7 +167,6 @@ body{
 
 }
 
-<<<<<<< HEAD
 .pumpkin-nose{
 	position: absolute;
 	margin: auto;
@@ -188,7 +178,7 @@ body{
 	right: 0;
 	background-color: #100404;
 	animation-name: pumpkin-light-nose;
-=======
+}
 .pumpkin::after {
 	background-color: transparent;
 	transform: rotate(-145deg);
@@ -204,13 +194,11 @@ body{
 	border-radius: 50%;
 	box-shadow: 5px 5px 0px 0px #100404;
 	animation-name: pumpkin-light-up;
->>>>>>> c45f9b8c31a944956f1c8dd49bb4ac24cd6e241e
 	animation-duration: 5s;
 	animation-iteration-count: 1;
 
 }
 
-<<<<<<< HEAD
 .pumpkin-mouth{
 	background-color: transparent;
 	transform: rotate(0deg);
@@ -229,16 +217,7 @@ body{
 	animation-duration: 5s;
 	animation-iteration-count: 1;
 }
-/*@keyframes pumpkin-light-nose{
-	0% {
-		background-color: white;
-	}
-}
-@keyframes pumpkin-light-up{
-	0% {
-		box-shadow: 5px 5px 0px 0px white;
-	}
-}*/
+
 .pumpkin-stem{
 	background-color: #AD4513;
 	transform: rotate(0deg);
@@ -252,9 +231,9 @@ body{
 	left: 0px;
 	right: 0px;
 	border-radius: 0%;
-	//box-shadow: 5px 5px 0px 0px #590202;
+}
 
-=======
+
 .pumpkin-nose{
 	position: absolute;
 	margin: auto;
@@ -312,19 +291,15 @@ body{
 	left: 0px;
 	right: 0px;
 	border-radius: 0%;
-	//box-shadow: 5px 5px 0px 0px #590202;
+	box-shadow: 5px 5px 0px 0px #590202;
 
->>>>>>> c45f9b8c31a944956f1c8dd49bb4ac24cd6e241e
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="animation-"] {
         width: 25%;
-<<<<<<< HEAD
 				height: 25%;
-=======
 	height: 25%;
->>>>>>> c45f9b8c31a944956f1c8dd49bb4ac24cd6e241e
     }
 }
