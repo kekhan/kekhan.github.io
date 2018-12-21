@@ -20,8 +20,10 @@
     <script type="text/javascript">
         var url = "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json";
      
-        var padding =1;
+        var padding = 20;
+        var margin = 20;
         var width = 499;
+
         var height = 520;
 
         var xScale = d3.time.scale().range([0,width]);
@@ -30,8 +32,8 @@
         
         var svg = d3.select('#d3js')
             .append('svg')
-            .attr('width',width)
-            .attr('height',height)
+            .attr('width',width + padding + margin + 100)
+            .attr('height',height + padding + margin + 10)
             .append('g')
             .attr('transform','translate(' + padding + ',' + padding + ')');
          // Set up the x axis
@@ -88,15 +90,19 @@
             svg.append("g")
 
             .attr("class", "x axis")
-            .attr("transform", "translate(0," + width + ")")
+            .attr("transform", "translate(0," + height  + ")")
             .call(xAxis);
 
           //the y axis
             svg.append("g")
               .attr("class", "y axis")
+
               .call(yAxis);
 
             bars.append('text')
+                .attr("dy",".1em")
+                .attr("dx",".1em")
+                .style("text-anchor","end")
                 .text(function(d){
                     return d;
 

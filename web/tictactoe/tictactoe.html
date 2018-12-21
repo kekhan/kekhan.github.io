@@ -12,19 +12,27 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="tictactoe.css">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-2846694379713501",
+	    enable_page_level_ads: true
+	  });
+	</script>
 </head>
 <body>
 <div class ='container-fluid'>
+	<h2>Pick Your Color</h2>
 	<form>
-		input blue or red
-		<input type="search" id ="color" value="">
-		<button type="button" onclick="turns()" >submit</button>
+		<button type = "button"  class = "redBox" id ="color" value = "red" onclick="turns(this)"></button>
+		<button type = "button" class = "blueBox" id ="color2" value = "blue" onclick="turns(this)">
+		</button>
 
 	</form>
 	<h1 id="logOut"></h1>
 	<div class='row well'>
-		<div id = "row1" class="row">
-			<h1>Tic Tac Toe</h1>
+		<h1>Tic Tac Toe</h1>
+		<div class="row row1">
 			<div class = "col-sm-4">
 				<button id = "btn" class="btn0" type ="button" value=0 onclick="get_user_spot(this)"></button>
 
@@ -36,7 +44,7 @@
 			    <button id = "btn" class="btn2" type ="button" value=2 onclick="get_user_spot(this)"> </button>
 			</div>
 		</div>
-		<div id = "row2" class="row">
+		<div class="row row2">
 			<div class = "col-sm-4">
 				<button id = "btn" class="btn3" type ="button" value=3 onclick="get_user_spot(this)"></button>
 			</div>
@@ -47,7 +55,7 @@
 				<button id = "btn" class="btn5" type ="button" value=5 onclick="get_user_spot(this)"></button>
 			</div>
 		</div>
-		<div id = "row3" class="row">
+		<div class="row row3">
 			<div class = "col-sm-4"> 
 				<button id = "btn" class="btn6" type ="button" value=6 onclick="get_user_spot(this)"></button>
 			</div>

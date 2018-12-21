@@ -21,6 +21,12 @@
 	position: relative;;
 
 }
+.blueBox{
+	background-color: blue;
+}
+.redBox{
+	background-color: red;
+}
 
 button{
 	width: 100px;
@@ -28,8 +34,13 @@ button{
 	margin: auto;
 	display: inline-block;
 	position: relative;
+	
 }
 
+}
+.row1, .row2, .row3{
+	display: flex;
+}
 
 
 
