@@ -1,0 +1,27 @@
+.recipe-img{
+  background: url("https://www.vegrecipesofindia.com/wp-content/uploads/2010/06/plain-paratha-recipe-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+  background-color: black;
+  margin: 0 auto;
+}
+.comment-section{
+  display: flex;
+}
+#recipe-box{
+  border: 10px solid #E64C66;
+  width: 50%;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 20px;
+}
+form{
+  display: center;
+}
+#box-container{
+  display: flex;
+}

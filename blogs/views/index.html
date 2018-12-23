@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/ef671f2488.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/myPage.css">
+	<link rel="stylesheet" type="text/css" href="/static/tab.css">
+	<link rel="stylesheet" type="text/css" href="/static/blog.css">
+  <link rel="stylesheet" type="text/css" href="/static/paratha.css">
+	<title>Mom's Paratha</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="header">
+	<header id="top" class ="main-header">
+    	<h1>Mom's Paratha Recipe</h1>
+		<div class="row">
+		<div class ="col-md-6">
+		</div>
+		<div class ="col-md-6">
+			<nav>
+			<ul class="list">
+				<li class="list"> <a href"../static/index.html">Home</a></li>&nbsp; &nbsp;&nbsp;
+				<li class="list"> <a href="#blog">Blog</a></li>&nbsp;&nbsp;&nbsp;
+				<li class="list"> <a href="#contact">Contact</a></li>
+			</ul>
+		</nav></div>
+		</div>
+
+	</header>
+	<section id="bio" class="topBorder">
+    <h3>Paratha</h3>
+		<div class="row">
+
+      <div class="col-md-6 col-lg-6 col-sm-6" id="recipe-box">
+      <ul>
+        <li><span>Prep Time: 25 Min</span></li>
+        <li><span>Cook Time: 10 Min</span></li>
+        <li><span>Serving 2</span></li>
+      </ul>
+      <p>Ingredients</p>
+      <ul>
+        <li><span>Butter</span></li>
+        <li><span>Flour</span></li>
+        <li><span>Serving 2</span></li>
+      </ul>
+      <p>Instuctions</p>
+      <ol>
+        <li><span>Butter</span></li>
+        <li><span>Flour</span></li>
+        <li><span>Serving 2</span></li>
+      </ol>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 recipe-img"></div>
+		</div>
+		</div>
+	</section>
+	<h2>Comments</h2>
+	<% for(let i = 0; i< posts.length; i++) {%>
+		<article>
+			<p> <%= posts[i].body %></p>
+		</article>
+	<% } %>
+  <section class="comment-section">
+    <div class="comment-form" id="box-container">
+      <form action="addPost" method="POST">
+        <legend>Leave Comment</legend>
+        <label for="comment">Comment</label>
+          <textarea id="comment" name="body" value=""></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <ul class="list">
+        <h3>Comments</h3>
+        <li class="user-comments"> Best</li>
+      </ul>
+
+    </div>
+  </section>
+	<div class="main-section">
+		<!--The main section has the tabs for notifications-->
+		<main></main>
+	</div>
+	<section id = "contact" class = "topBorder" >
+		<h2 id = "contact">Contact</h2>
+		<div class ="row">
+			<div class ="col-md-6">
+				<a href="https://github.com/kekhan"><i class="fa fa-github fa-5x" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div class = "col-md-6">
+				<a href="mailto:kerink585@gmail.com"> <i class="fa fa-envelope fa-3x" aria-hidden="true" alt ="send email"></i>
+				</a>
+			</div>
+	  </div>
+	</section>
+
+	<footer id="footer" class="topBorder">
+		<a href ="#top">Back to Top</a>
+
+	</footer>
+</div>
+</body>
+</html>
