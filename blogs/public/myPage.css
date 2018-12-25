@@ -303,3 +303,9 @@ body{
 	height: 25%;
     }
 }
+.scroll-bar{
+  display: inline-block;
+  height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+}
