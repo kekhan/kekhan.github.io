@@ -1,6 +1,7 @@
 //setup
 var express = require('express');
 var app = express();
+const port = process.env.PORT || 80;
 app.use('/static', express.static("public"));
 // mongo db
 var mongoose = require('mongoose')
@@ -36,6 +37,7 @@ app.post('/addPost', (request,response)=>{
   });
 });
 //Listen to port
-app.listen(3000,'0.0.0.0', () => {
+
+app.listen(port, () => {
   console.log("Server listening on 3000");
 })
