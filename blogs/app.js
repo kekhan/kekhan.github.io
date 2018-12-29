@@ -1,7 +1,7 @@
 //setup
 var express = require('express');
 var app = express();
-const port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 app.use('/static', express.static("public"));
 // mongo db
 var mongoose = require('mongoose')
@@ -39,5 +39,5 @@ app.post('/addPost', (request,response)=>{
 //Listen to port
 
 app.listen(port, () => {
-  console.log("Server listening on 3000");
+  console.log("Server listening on http://localhost:"+ port);
 })
