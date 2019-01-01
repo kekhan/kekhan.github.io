@@ -1,0 +1,22 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "description": "create a directory: mkdir projects  git clone https://github.com/kekhan/kekhan.github.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekhan/kekhan.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kekhan/kekhan.github.io/issues"
+  },
+  "homepage": "https://github.com/kekhan/kekhan.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

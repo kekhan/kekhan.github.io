@@ -1,7 +1,7 @@
 //setup
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 4000;
 app.use('/static', express.static("public"));
 // mongo db
 var mongoose = require('mongoose')
