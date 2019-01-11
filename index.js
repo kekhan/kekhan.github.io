@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 //routers
 
 app.get('/',(req,res)=>{
-
+  
 })
 //listening to Server
 app.listen(port,()=>{
