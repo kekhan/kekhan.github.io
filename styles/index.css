@@ -1,21 +1,20 @@
 body{
-  background-color: #F24C3D;
+  background-color: #BF4545;
   margin: 0;
 }
-header{
-padding: 50px;
-}
+
 nav{
   display: inline;
   font-style: italic;
   font-size: 1.5rem;
-  color: #D9CA9C;
+  color: #F2B28D;
   margin-left: 30px;
+  position: fixed;
+
 }
 a{
   margin: 100px;
-  color: #D9CA9C;
-
+  color: #F2B28D;
   text-decoration: none;
 }
 a:hover {
@@ -23,4 +22,55 @@ a:hover {
 }
 a:active{
   text-decoration: underline;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap:2px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 50px 30px;
+}
+.divs{
+  top:0;
+  bottom: 0;
+  right: 0;
+  position: static;
+  margin-left: 50px;
+}
+.para1{
+  grid-column: 2;
+  grid-row: 1;
+}
+img1{
+  grid-column: 1;
+  grid-row:1;
+}
+
+.para2{
+  grid-column: 1;
+  grid-row: 1;
+}
+img2{
+  grid-column: 2;
+  grid-row:1;
+}
+.para3{
+  grid-column: 2;
+  grid-row: 1;
+}
+img3{
+  grid-column: 1;
+  grid-row:1;
+}
+#canvas{
+  padding: 50px;
+  top:0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+h1{
+  padding: 100px;
+  color: #F2B28D;
 }
