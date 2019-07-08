@@ -2,7 +2,7 @@ const canvas=document.getElementById('canvas');
 const context=canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
-canvas.height=window.innerHeight;
+canvas.height=window.innerHeight+300;
 let CurrentscrollPosition=0;
 let ticking=false;
 
@@ -19,12 +19,19 @@ class Object {
   get position_x(){
     return this.calcPositionX();
   }
-  get scrollPosition(){
+  get mousePositionX(){
     return this.calcEvent();
   }
+  
   //Methods
   calcPositionX(pos){
-    return this.x=pos*2;
+    return this.x=pos;
+  }
+  mouseY(pos){
+    return this.y=pos;
+  }
+  scaleSize(pos){
+    return this.height=pos
   }
 
   draw(){
@@ -34,15 +41,17 @@ class Object {
 
 }
 let square = new Object(canvas.width*0.2,canvas.height*0.2,100,100);
-window.addEventListener('scroll', function(e){
-  CurrentscrollPosition=window.scrollY;
+window.addEventListener('mousemove', function(e){
+  CurrentMouseXPosition=e.clientX;
+  CurrentMouseYPosition=e.clientY;
   if(!ticking){
 
     window.requestAnimationFrame(function(){
       context.clearRect(0,0,canvas.width,canvas.height);
 
       square.draw();
-      square.calcPositionX(CurrentscrollPosition);
+      square.calcPositionX(CurrentMouseXPosition);
+      square.mouseY(CurrentMouseYPosition);
       ticking=false;
     });
 
