@@ -7,7 +7,9 @@ let CurrentscrollPosition=0;
 let ticking=false;
 
 //create a class for main object
+class Wave {
 
+}
 class Object {
   constructor(x,y,height, width){
     this.height=height;
@@ -40,7 +42,7 @@ class Object {
   }
 
 }
-let square = new Object(canvas.width*0.2,canvas.height*0.2,100,100);
+/*let square = new Object(canvas.width*0.2,canvas.height*0.2,100,100);
 window.addEventListener('mousemove', function(e){
   CurrentMouseXPosition=e.clientX;
   CurrentMouseYPosition=e.clientY;
@@ -58,4 +60,16 @@ window.addEventListener('mousemove', function(e){
   }
   ticking=true;
 
+
 });
+*/
+
+context.beginPath();
+context.moveTo(0, canvas.height/2);
+for(let i=0; i<=canvas.width;i++){
+  context.lineTo(i,canvas.height/3 + Math.sin(i*0.01)*100);
+
+}
+context.strokeStyle="hsl(50,90%,50%)";
+context.stroke();
+
