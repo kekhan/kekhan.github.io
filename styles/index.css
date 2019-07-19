@@ -1,5 +1,5 @@
 body{
-  background-color: #BF4545;
+  background-color: rgb(12, 1, 1);
   margin: 0;
 }
 
@@ -7,14 +7,14 @@ nav{
   display: inline;
   font-style: italic;
   font-size: 1.5rem;
-  color: #F2B28D;
-  margin-left: 30px;
+  color: rgb(233, 231, 231);
+  margin-left: 100px;
   position: fixed;
 
 }
 a{
   margin: 100px;
-  color: #F2B28D;
+  color: rgb(243, 240, 239);
   text-decoration: none;
 }
 a:hover {
