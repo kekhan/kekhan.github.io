@@ -4,21 +4,56 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<meta charset="UTF-8">
 
 </head>
 <body>
+    <div class="container">
+	<!-- Content here -->
+	<div class="row">
+	    <div class="col-md-6">
+		    <div class="name">K e r i n</div>
+	    </div>
+		<div class="col-md-6">
+			<nav>
+				<a>Home</a>
+				<a>Sketches</a>
+				<a>Projects</a>
+				<a>Contact</a>
+			</nav>
+		</div>
+		
+	</div>
 	<header>
+		<article class="sketches">Sketches</article>
+		<div class="gallary">
 
+		</div>
+		<button class="buttonR">Left</button>
+		<button class="buttonL">right</button>
 	</header>
-	<nav>
-		<!--Nav Bar should appear freezed on the top, always present when scrolled-->
-		<a href="#">Home</a>
-		<a href="#projects">Projects</a>
-		<a href="#">Resume</a>
-		<a href="#">Contact</a>
-	</nav>
-	<canvas id="canvas"></canvas>
+	<section>
+		<article class="projects">Projects</article>
+		<div class="project1">
+			<div class="row">
+				<div class="col-md-6 proimg1"></div>
+				<div class="col-md-6 proDetail1">
+					<p>Demo Reel
+							3d animated short about a little
+							monster who misses a halloween 
+							party at school because the behavior
+							pyschologuist pulls the little monster
+							out during the party. 
+							</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	 </div>
+	
 </body>
 <script src="scripts/index.js"></script>
 </html>
