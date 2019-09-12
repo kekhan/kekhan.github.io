@@ -1,12 +1,14 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Portfolio</title>
-	<link rel="stylesheet" href="styles/index.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
 
 </head>
 <body>
@@ -17,41 +19,90 @@
 		    <div class="name">K e r i n</div>
 	    </div>
 		<div class="col-md-6">
-			<nav>
-				<a>Home</a>
-				<a>Sketches</a>
-				<a>Projects</a>
-				<a>Contact</a>
+			<nav class>
+				<a href="#">Home</a>
+				<a href="#sketch">Sketches</a>
+				<a href="#project">Projects</a>
+				<a href="#email">Contact</a>
 			</nav>
 		</div>
 		
 	</div>
 	<header>
-		<article class="sketches">Sketches</article>
+		<article id ="sketch" class="sketches">Sketches</article>
 		<div class="gallary">
 
 		</div>
-		<button class="buttonR">Left</button>
-		<button class="buttonL">right</button>
+		<button type="button" class="buttonR btn btn-default btn-lg">
+				<span class="icon icon-search"></span> 
+		</button>
+		<button class="buttonL">Left</button>
 	</header>
 	<section>
-		<article class="projects">Projects</article>
-		<div class="project1">
+		<article id ="project" class="projects">Projects</article>
+		<div class="project2 contain">
 			<div class="row">
-				<div class="col-md-6 proimg1"></div>
-				<div class="col-md-6 proDetail1">
-					<p>Demo Reel
-							3d animated short about a little
-							monster who misses a halloween 
-							party at school because the behavior
-							pyschologuist pulls the little monster
-							out during the party. 
-							</p>
+				<div class="col-md-6  proDetail2">
+						<h2>Doodle Application</h2>
+					<p>
+						Doodle Application: An Application that allows people to sketches in the 
+						browser. This Application allows users to save using O Auth and share steches on 
+						social media.
+					</p>
+
 				</div>
+				<div class="col-md-6 proimg2"></div>
 			</div>
 		</div>
-
+		<div class="project3">
+				<div class="row">
+					<div class="col-md-6 proimg3"></div>
+					<div class="col-md-6 proDetail3">
+							<h2>Weather Forecast</h2>
+						<p> 
+								Weather application 10 day forecast. Shows users of any weather disasters nearby.
+								Allows users to search for other city Weather. Recommands the type of fabric to wear for optimal
+								comfort. 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="project4 contain">
+					<div class="row">
+						<div class="col-md-6  proDetail4">
+								<h2>Space Game</h2>
+							<p >
+								Asteroid Game: An arcade shooter type of game. Players can level-up, 
+							</p>
+		
+						</div>
+						<div class="col-md-6 proimg4">
+							
+						</div>
+					</div>
+				</div>
 	</section>
+	<footer>
+		<div class="row">
+			<div class="col-md-6 mail">
+				
+			<a href="mailto:kerink585@gmail.com">
+				mail
+			</a>
+		</div>
+		<div id="email" class="col-md-6 github">
+				
+			<a href="https://github.com/kekhan">
+					Github
+			</a>
+		</div>
+		</div>
+		
+	</footer>
+	
+	<div class="copyrights">
+		&copy; 2019 Kerin
+	</div>
 	 </div>
 	
 </body>
