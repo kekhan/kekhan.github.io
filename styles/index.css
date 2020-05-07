@@ -5,29 +5,23 @@ body{
 
 nav{
   display: inline;
-  font-family: Papyrus; 
+  font-family: Papyrus;
   font-size: 1.5rem;
   color: black;
 
 }
-a{
-  position: relative;
-  width: 99px;
-  height: 33px;
+.content-side a{
+  text-decoration: none;
   margin: 22px;
   font-family: Papyrus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 33px;
-  text-decoration: none;
-  color: #000000;
-  padding-bottom: 100px;
-  
-}
-a:hover{
-  text-decoration: none;
+  color: black;
 
+
+
+}
+.content-side a:hover{
+  text-decoration: none;
+  color: pink;
 }
 
 
@@ -71,163 +65,15 @@ line-height: 66px;
 color: #000000;
 
 }
-.gallary{
-  /* Rectangle 2 */
-  position: absolute;
-  min-width:80%;
-  min-height:70%;
-  top: 300px;
-  background: no-repeat center/ 50%, #FFFFFF;
-  border: 40px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ul{
+style: none;
+list-style-type: none;
 }
-.buttonR{
-  position: relative;
-  top: 400px;
-  left: 80%;
-}
-.buttonL{
-  position: relative;
-  top: 400px;
-  left: 0%;
-}
-.projects{
-    /* Projects */
-
-  position: absolute;
-  width: 288px;
-  height: 65px;
-  left: 40%;
-  top: 920px;
-
-  font-family: Papyrus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 66px;
-
-  color: #000000;
-
-}
-.proimg1{
-  /* Rectangle 3 */
-
-  position: absolute;
-  width: 298px;
-  height: 209px;
-  left: 0px;
-  top: 800px;
-  
-  background: #D8D2F8;
-  border: 55px solid #000000;
-  box-sizing: border-box;
-}
-.proDetail1{
-  position: absolute;
-  width: 298px;
-  height: 209px;
-  left: 0px;
-  top: 800px;
-
-  font-family: Papyrus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 29px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-}
-.proimg2{
-  /* Rectangle 3.1 */
-  position: absolute;
-  width: 298px;
-  height: 209px;
-  left: 9px;
-  top: 845px;
-
-  background: #FAD5D5;
-  border: 41px solid #000000;
-  box-sizing: border-box;
-}
-.proDetail2{
-  width: 434px;
-  height: 145px;
-  left: 0px;
-  top: 845px;
-  font-family: Papyrus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-  color: #000000;
-  float: left;
-}
-.proDetail3{
-    position: absolute;
-  width: 416px;
-  height: 29px;
-  left: 0px;
-  top: 850px;
-
-  font-family: Papyrus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.1em;
-
-  color: #000000;
-}
-.proimg3{
 
 
-  position: absolute;
-  width: 298px;
-  height: 209px;
-  left: 0px;
-  top: 850px;
-
-  background: #DAEBD7;
-  border: 38px solid #000000;
-  box-sizing: border-box;
-
-}
-.proDetail4{
-  position: absolute;
-width: 165px;
-height: 29px;
-left: 8px;
-top: 870px;
-
-font-family: Papyrus;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 29px;
-letter-spacing: 0.1em;
-
-color: #000000;
-
-
-}
-.proimg4{
-
-position: absolute;
-width: 298px;
-height: 209px;
-left: 8px;
-top: 870px;
-
-background: #C9F9FC;
-border: 59px solid #000000;
-box-sizing: border-box;
-}
 .mail{
   position: absolute;
-  
+
   left: 0px;
   top: 900px;
 
@@ -237,13 +83,13 @@ box-sizing: border-box;
 }
 .github{
   position: absolute;
-  
+
   left: 0px;
   top: 900px;
 
   background: #FFFFFF;
   box-sizing: border-box;
-  
+
 }
 .copyrights{
   position: absolute;
@@ -253,6 +99,34 @@ box-sizing: border-box;
   width: 121px;
   height: 25px;
 }
-h2{
+.content-side h1{
   font-family: Papyrus;
+  text-align: center;
+  padding-bottom: 10%;
+
+}
+.twoCol{
+  display: flex;
+}
+
+.img-side{
+  float: left;
+  width:auto;
+  float: left;
+  display: flex;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.img_side img{
+  width:700px;
+}
+
+.content-side{
+  text-align: center;
+  float: right;
+  padding-top: 20%;
+  min-width: 50%
+
 }
