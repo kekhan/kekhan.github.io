@@ -11,27 +11,72 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body<!--Main header will be used all across web page-->
+	<header>
+		<h1>Kerin</h1>
+		<nav>
 
-	<div class="twoCol">
-		
-		<div class="content-side">
-			<h1>Kerin Khan</h1>
-			<nav>
-				<ul>
-					<a href="#"><li>Projects</li></a>
-					<a href="#"><li>Drawings</li></a>
-					<a href="#"><li>About</li></a>
-				</ul>
-			<nav>
-				<a href="https://twitter.com/KerinKhan1"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
-				<a  href="https://github.com/kekhan"><i class="fa fa-github-square" style="font-size:24px"></i></a>
+		<ul>
+		<!--	<a href="#"><li>Home</li></a> -->
+		</ul>
+	</nav>
+	</header>
+	<main>
+		<p id="intro">Hello! I'm Kerin, UI/UX Web Developer.</p>
+		<div class="container-fluid">
+			<a href="http://kerinkhan.me/pixelDoodleApp/src/client/index.html">
+			<div class="row row1">
+				<div class="col-md-6 proimg1"></div>
+				<div class="col-md-6" id="paragraph">
+					<h2>Doodle App</h2>
+					<p>This documentation is about a doodling app for artists.
+						The document users will learn how to use and intall the application. </p>
+				</div>
+
+			</div>
+		</a>
+			<a href="http://kerinkhan.me/rpg/index.html">
+			<div class="row row2">
 
 
+				<div class="col-md-6" id="paragraph">
+					<h2>Javascript Game</h2>
+					<p>A single player 2d tile map Javascript game. Plasyer can collect coin and change levels.</p>
+				</div>
+				<div class="col-md-6 proimg2">
+
+				</div>
+			</div>
+		</a>
+			<a href="http://kerinkhan.me/wikiViewer/wikiViewer.html">
+			<div class="row row3">
+				<div class="col-md-6 proimg3"></div>
+				<div class="col-md-6" id="paragraph">
+					<h2>WikiViewer</h2>
+					<p> This is a Wikipedia Search app. Allows you to search articles on Wikipedia.</p></div>
+
+
+			</div>
 		</div>
-	</div>
+		</a>
+	</main>
+	<footer>
+		<div class="row">
+			<div class="col-md-6 mail">
 
+			<a href="mailto:kerink585@gmail.com">
+				E-mail Me!
+			</a>
+		</div>
+		<div id="email" class="col-md-6 github">
 
+			<a href="https://github.com/kekhan">
+					Check out my Github
+			</a>
+		</div>
+		</div>
+      <p>©Copyright 2020 by nobody. All rights reversed.</p>
+    </footer>
 </body>
 <script src="scripts/index.js"></script>
 </html>

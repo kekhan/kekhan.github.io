@@ -2,33 +2,38 @@
 body{
   margin: 0;
 }
+header{
+  padding-left: 60px;
+  font-family: Papyrus;
+  padding-top: 20px;
+}
 
 nav{
-  display: inline;
+  display: inline-block;
   font-family: Papyrus;
   font-size: 1.5rem;
   color: black;
 
+
 }
-.content-side a{
+h1{
+  padding-right: 50px;
+}
+a{
   text-decoration: none;
   margin: 22px;
   font-family: Papyrus;
-  color: black;
+  font-color: black;
 
 
 
 }
-.content-side a:hover{
+a:hover{
   text-decoration: none;
   color: pink;
 }
 
 
-
-.row{
-  padding-top: 65px;
-}
 .sketches{
   /* Sketches */
 overflow-y: scroll;
@@ -68,32 +73,30 @@ color: #000000;
 ul{
 style: none;
 list-style-type: none;
+display: inline-block;
+
+}
+li{
+  display: inline-block;
+  padding-left: 350px;
+
 }
 
 
 .mail{
-  position: absolute;
 
-  left: 0px;
-  top: 900px;
-
+  padding-left: 300px;
   background: #FFFFFF;
   box-sizing: border-box;
 
 }
 .github{
-  position: absolute;
-
-  left: 0px;
-  top: 900px;
-
   background: #FFFFFF;
   box-sizing: border-box;
 
 }
 .copyrights{
   position: absolute;
-  top: 2350px;
   left: 40%;
   font-family: Papyrus;
   width: 121px;
@@ -129,4 +132,90 @@ list-style-type: none;
   padding-top: 20%;
   min-width: 50%
 
+}
+
+.row1{
+  padding: 7%;
+  padding-top: 50px;
+  background-color: rgba(216, 210, 248, 0.4);
+  border: 50px solid #ffffff;
+  max-width: 100%;
+  max-height: 100%;
+}
+.proimg1{
+  padding: 1px;	  /* Rectangle 3 */
+  color: #F2B28D;
+
+  position: absolute;
+  padding: 5%;
+  max-width: 100%;
+  max-height: 100%;
+
+
+  background: #D8D2F8;
+  border: 25px solid #000000;
+}
+.proimg2{
+  padding: 1px;	  /* Rectangle 3 */
+  color: #F2B28D;
+
+  position: absolute;
+  padding: 5%;
+  max-width: 100%;
+  max-height: 100%;
+
+
+  background: #C9F9FC;
+  border: 25px solid #000000;
+
+}
+p{
+  align-content: center;
+
+}
+.proimg3{
+  padding: 1px;	  /* Rectangle 3 */
+  color: #F2B28D;
+  position: absolute;
+  padding:  5%;
+  float: left;
+  max-width: 100%;
+  max-height: 100%;
+
+
+  background: #FAD5D5;
+  border: 25px solid #000000;
+
+}
+.row2{
+  padding: 7%;
+  padding-top: 50px;
+  background-color: rgba(201, 249, 252, 0.29);
+  border: 50px solid #ffffff;
+  max-width: 100%;
+  max-height: 100%;
+}
+.row3{
+  padding: 7%;
+  padding-top: 50px;
+  background-color: rgba(250, 213, 213, 0.31);
+
+  border: 50px solid #ffffff;
+  max-width: 100%;
+  max-height: 100%;
+
+
+
+}
+
+#intro{
+  padding-left: 30%;
+  padding-top: 5%;
+  font-size: 1.5em;
+  font-family: Papyrus;
+  color: black;
+
+}
+#paragraph{
+  padding: 35px;
 }
