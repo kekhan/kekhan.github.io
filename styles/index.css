@@ -219,3 +219,104 @@ p{
 #paragraph{
   padding: 35px;
 }
+*{
+	box-sizing:border-box;
+}
+
+ul li{
+	display: inline;
+	list-style: none;
+	font-size: 1.5em;	
+}
+a{
+	color:#F9C1D9;
+}
+
+a:link{
+	text-decoration: none;
+
+}
+
+#contact a {
+	color: #EF525B;
+}
+#contact a:hover {
+	color: #F788A6;
+}
+#footer a{
+	color: #EF525B;
+
+}
+#footer a:hover{
+	color: #F788A6;
+}
+a:hover{
+	color: #F788A6;
+}
+
+.projectImg{
+	padding-top: 50px;
+	padding-right: 0;
+	padding-left: 0;
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	max-width: 100%;
+}
+.projectImg:hover{
+	border-radius: 100%;
+}
+.portfolio{
+	padding-top: 50px;
+	padding-left: 50px;
+	
+}
+.main-header{
+	background-color: #EF525B;
+	padding-top: 50px;
+}
+.main-header h1{
+	color:#F9C1D9;
+}
+
+h1{
+	font-size: 4em;
+	text-align: center;
+}
+.aboutH2{
+	padding-left: 50px;
+	
+}
+body{
+	margin: 0;
+
+}
+
+#contact{
+
+	padding-right: 50px;
+	padding-left: 50px;
+	
+}
+#bio{
+	padding-left: 50px;
+	padding-top: 50px;
+	height:300px; 
+	background-image: url('https://placeimg.com/1000/1000/nature/grayscale');
+	background-size: cover;
+	background-repeat: no-repeat;;
+	background-position:center;
+}
+#footer{
+	border-bottom: 50px solid #EF525B;
+	padding-left: 50px;
+}
+.topBorder{
+	border-bottom: 5px solid #F9C1D9;
+	margin-top: 20px;
+}
+
+#bio span{
+	color:#EF525B;
+	background-color: white; 	
+}
