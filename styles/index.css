@@ -1,125 +1,151 @@
-/* General Styles */
+/* Normalize.css will take care of cross-browser consistency */
+
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f0e1;
-    color: #4a3f35;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-a {
-    color: #c66900;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1, h2, h5 {
-    color: #663300;
-}
-
-header.main-header {
-    background-color: #4a3f35;
+/* Header Styling */
+.main-header {
+    background-color: #ffb6b9;
     padding: 20px;
-    text-align: center;
-    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header.main-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.main-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
 }
 
-nav ul {
-    list-style-type: none;
+.main-header nav ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline-block;
+.main-header nav ul li {
+    display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
-    color: #f5f0e1;
-    font-size: 1.2em;
+.main-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #c66900;
+.main-header nav ul li a:hover {
+    color: #f8e9a1;
 }
 
+/* Section Styling */
 .topBorder {
-    border-top: 5px solid #c66900;
-    padding: 20px 0;
-    margin-top: 20px;
+    border-top: 2px solid #ffb6b9;
+    margin-top: 50px;
+    padding-top: 30px;
 }
 
 h2 {
+    font-size: 2rem;
+    color: #333;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-/* Portfolio Projects Section */
 .portfolio .row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.portfolio .row div {
+    flex: 1 1 30%;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.portfolio div {
-    text-align: center;
-    margin: 10px;
-}
-
-.projectImg {
-    width: 150px;
+.portfolio .row div img {
+    width: 80%;
     height: auto;
-    border: 2px solid #c66900;
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h5 {
+.portfolio .row div img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio h5 {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #4a3f35;
+    color: #ffb6b9;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 /* Contact Section */
 #contact .row {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-#contact .fa {
-    color: #4a3f35;
+#contact .row div {
+    margin: 0 15px;
 }
 
-#contact .fa:hover {
-    color: #c66900;
+#contact .row div a {
+    color: #ffb6b9;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Footer */
-footer {
-    background-color: #4a3f35;
-    color: white;
+#contact .row div a:hover {
+    color: #f67280;
+}
+
+#contact .row div i {
+    font-size: 4rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact .row div i:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+#footer {
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    background-color: #ffb6b9;
+    color: white;
 }
 
-footer a {
-    color: #f5f0e1;
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-footer a:hover {
-    color: #c66900;
+#footer a:hover {
+    color: #f8e9a1;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .portfolio .row div {
+        flex: 1 1 100%;
+    }
+
+    .main-header h1 {
+        font-size: 2rem;
+    }
+
+    #contact .row div {
+        margin: 15px 0;
+    }
 }
