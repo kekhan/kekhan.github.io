@@ -1,119 +1,140 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<script src="https://use.fontawesome.com/ef671f2488.js"></script>
-        <link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="styles/index.css">
-	<title>Kerin Khan</title>
-	<meta charset="UTF-8">
-	<meta http-equiv='cache-control' content='no-cache'> 
-	<meta http-equiv='expires' content='0'> 
-	<meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Kerin Khan</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/ef671f2488.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+
 </head>
+
 <body>
-	<div>
-	<header id="top" class ="main-header">
-		<div class="row">
-		<div class ="col-md-6">
-			<h1>Kerin Khan</h1>
-		</div>
-		<div class ="col-md-6">
-			<nav>
-			<ul>
-				<li> <a href="https://medium.com/@kerin_k">Blog</a></li>&nbsp; &nbsp;&nbsp;
-				<li> <a href="#projects">projects</a></li>&nbsp; &nbsp;&nbsp;
-				<li> <a href="#contact">contact</a></li>
-			</ul>
-		</nav></div>
-		</div>
-		
-	</header>
-		
-	<section class="topBorder portfolio" id="projects">
+    <!-- Header and Navbar -->
+    <header id="top" class="main-header fixed-top">
+        <div class="container">
+            <h1>Kerin Khan</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://medium.com/@kerin_k">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-		<h2>Technical Writing Samples</h2>
+    <!-- Portfolio Section -->
+    <section id="projects" class="portfolio container">
+        <h2>Technical Writing Samples</h2>
+        <div class="row">
+            <div class="col-md-4 projectDiv">
+                <a href="https://mariadb.com/docs/server/ref/mdb/sql-statements/CREATE_DATABASE/">
+                    <img src="https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark@2x.d3f9b9.png"
+                        class="projectImg" alt="MariaDB Create Database Reference">
+                </a>
+                <h5>MariaDB Create Database Reference</h5>
+            </div>
+            <div class="col-md-4 projectDiv">
+                <a href="https://mariadb.com/docs/skysql-dbaas/connect/nr-query-editor/">
+                    <img src="https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark@2x.d3f9b9.png"
+                        class="projectImg" alt="MariaDB SkySQL Query Editor Walkthrough">
+                </a>
+                <h5>MariaDB SkySQL Query Editor Walkthrough</h5>
+            </div>
+            <div class="col-md-4 projectDiv">
+                <a href="https://mariadb.com/docs/skysql-previous-release/security/database-accounts/#Privileges">
+                    <img src="https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark@2x.d3f9b9.png"
+                        class="projectImg" alt="Grant Database User Privileges">
+                </a>
+                <h5>Grant Database User Privileges</h5>
+            </div>
+        </div>
 
-		<div class="row">
-		
-			<div>
-				<a href="https://mariadb.com/docs/server/ref/mdb/sql-statements/CREATE_DATABASE/"><img srcset="https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark.88b2ec.png 1x,   https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark@2x.d3f9b9.png 2x" class="projectImg"></a>
-				<h5>MariaDB Create Database Reference</h5>
-			</div>	
-			<div>
-				<a href="https://mariadb.com/docs/skysql-dbaas/connect/nr-query-editor/"><img srcset="https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark.88b2ec.png 1x,   https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark@2x.d3f9b9.png 2x" class="projectImg"></a>
-				<h5>MariaDB SkySQL Query Editor Walkthrough</h5>
-			</div>	
-			<div>
-				<a href="https://mariadb.com/docs/skysql-previous-release/security/database-accounts/#Privileges"><img srcset="https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark.88b2ec.png 1x,   https://mariadb.com/wp-content/themes/mariadb-sage/public/images/mariadb-logo-mark@2x.d3f9b9.png 2x" class="projectImg"></a>
-				<h5>Grant Database User Privileges</h5>
-			</div>	
-		</div>
+        <h2>API Projects</h2>
+        <div class="row">
+            <div class="col-md-4 projectDiv">
+                <a href="https://kekhan.github.io/randomQuote/randomQuote.html">
+                    <img src="projectImages/quotesnap.png" class="projectImg" alt="Tweet Machine Project">
+                </a>
+                <h5>Tweet Machine</h5>
+            </div>
+            <div class="col-md-4 projectDiv">
+                <a href="https://kekhan.github.io/wikiViewer/wikiViewer.html">
+                    <img src="projectImages/wiki.png" class="projectImg" alt="Wikipedia Search Project">
+                </a>
+                <h5>Wikipedia Search</h5>
+            </div>
+        </div>
 
-		<h2>API Projects</h2>
-    
-		<div class="row">
-		    
-			
-			<div>
-				<a href="https://kekhan.github.io/randomQuote/randomQuote.html"><img src="projectImages/quotesnap.png" class="projectImg"></a>
-				<h5>Tweet Machine</h5>
-			</div>
-			
-			<div>
-				<a href="https://kekhan.github.io/wikiViewer/wikiViewer.html"><img src="projectImages/wiki.png" class="projectImg"></a>
-				<h5>Wikipedia Search</h5>
-			</div>
-			
-			
-		</div>
-		
-		<h2>Javascript Games</h2>
-		<div class="row">
+        <h2>Javascript Games</h2>
+        <div class="row">
+            <div class="col-md-4 projectDiv">
+                <a href="https://kekhan.github.io/2d-scroll-game/">
+                    <img src="projectImages/2d-game.png" class="projectImg" alt="2D JavaScript Side Scroll Game">
+                </a>
+                <h5>2D JavaScript Side Scroll Game</h5>
+                <a href="https://medium.com/towardsdev/2d-scroll-game-in-javascript-for-beginners-9eb0d92a246d">Code Walkthrough</a>
+            </div>
+            <div class="col-md-4 projectDiv">
+                <a href="https://kekhan.github.io/tictactoe/tictactoe.html">
+                    <img src="projectImages/tictactoe.png" class="projectImg" alt="Tic Tac Toe Game">
+                </a>
+                <h5>Tic Tac Toe</h5>
+            </div>
+            <div class="col-md-4 projectDiv">
+                <a href="https://kekhan.github.io/ballBounceGame/keepBallUp.html">
+                    <img src="projectImages/ballGame.png" class="projectImg" alt="Ball Game">
+                </a>
+                <h5>Ball Game</h5>
+            </div>
+        </div>
+    </section>
 
-			<div>
-				<a href="https://kekhan.github.io/2d-scroll-game/"><img src="projectImages/2d-game.png" class="projectImg"></a>
-				<h5>2d JavaScript Side Scroll Game</h5>
-				<a href="https://medium.com/towardsdev/2d-scroll-game-in-javascript-for-beginners-9eb0d92a246d">Code Walkthrough</a>
-			</div>
-	
-			<div>
-				<a href="https://kekhan.github.io/tictactoe/tictactoe.html"><img src="projectImages/tictactoe.png" class="projectImg"></a>
-				<h5>Tic Tac Toe</h5>
-			</div>
-			
-			<div>
-				<a href="https://kekhan.github.io/ballBounceGame/keepBallUp.html"><img src="projectImages/ballGame.png" class="projectImg"></a>
-				<h5>Ball Game</h5>
-			</div>
-			
-		</div>
+    <!-- Contact Section -->
+    <section id="contact" class="topBorder container">
+        <h2>Contact</h2>
+        <div class="row contact-icons justify-content-center">
+            <div class="col-md-2">
+                <a href="https://github.com/kekhan">
+                    <i class="fa fa-github fa-5x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="mailto:kerink585@gmail.com">
+                    <i class="fa fa-envelope fa-5x" aria-hidden="true" alt="send email"></i>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="https://twitter.com/khan_kerin">
+                    <i class="fa fa-twitter fa-5x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-	</section>
+    <!-- Footer -->
+    <footer id="footer" class="topBorder">
+        <a href="#top">Back to Top</a>
+    </footer>
 
-	<section id = "contact" class = "topBorder" >
-		<h2 id = "contact">Contact</h2>
-		<div class ="row">
-			<div>
-				<a href="https://github.com/kekhan"><i class="fa fa-github fa-5x" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div>
-				<a href="mailto:kerink585@gmail.com"> <i class="fa fa-envelope fa-3x" aria-hidden="true" alt ="send email"></i>
-				</a>
-			</div>
-			<div>
-			    <a href="https://twitter.com/khan_kerin"><i class="fa fa-twitter fa-5x"></i></a>
-			</div>
-	    </div>
-	</section>
-
-	<footer id="footer" class="topBorder">
-		<a href ="#top">Back to Top</a>
-
-	</footer>
-</div>
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
